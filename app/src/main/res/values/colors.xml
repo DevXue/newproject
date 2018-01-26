@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorNavigation">#2B2B2B</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="transparent">#0000</color><!-- 透明 -->
+    <color name="transparent2">#8000</color><!-- 透明 -->
+    <color name="translucent">#89000000</color><!-- 半透明 -->
+
+    <color name="common_line_color">#eee</color>
+
+    <color name="gray">#efefef</color>
+
+    <color name="default_tv_color">#757575</color>
+    <color name="bnv_color">#F8F8F8</color>
+
+</resources>

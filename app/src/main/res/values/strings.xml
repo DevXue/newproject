@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BasicProject</string>
+
+
+    <string name="tips">温馨提示</string>
+    <string name="play_tips">当前处于移动网络，确定打开移动网络播放开关吗？</string>
+    <string name="play_tips_sure">立即打开</string>
+    <string name="download_tips">当前处于移动网络，下载将消耗较多流量，是否继续下载？</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="no_permission_storage">没有访问存储空间权限，无法正常使用APP，强烈建议开启</string>
+    <string name="no_permission_storage_write">没有存储空间权限，无法下载文件，强烈建议开启</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
