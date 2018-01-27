@@ -7,7 +7,7 @@ package com.basicproject.demo.main.constants;
  */
 
 public class APIConst {
-    public static final String BASEURL = "https://api.xbbwsm.com/api/";// 线上 BaseURL
+    public static final String BASEURL = "";// 线上 BaseURL
 
 
 }
