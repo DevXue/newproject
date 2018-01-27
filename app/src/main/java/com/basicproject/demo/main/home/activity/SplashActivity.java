@@ -18,6 +18,7 @@ public class SplashActivity extends BaseActivity {
 
     @Bind(R.id.versionTv)
     TextView versionTv;
+
     private static final int ANIMATION_DURATION = 3000;
     private boolean isFirstIn = false;//是否首次打开APP
 
@@ -50,7 +51,7 @@ public class SplashActivity extends BaseActivity {
                 finish();*/
                 initSplash();
             }
-        },1000);
+        },3000);
     }
 
 

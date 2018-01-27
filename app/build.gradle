@@ -50,5 +50,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.jaeger.statusbarutil:library:1.4.0'
     compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.1'
+    compile 'com.airbnb.android:lottie:2.5.0-beta3'
     implementation files('libs/app.jar')
 }

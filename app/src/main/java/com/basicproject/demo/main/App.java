@@ -50,7 +50,7 @@ public class App extends BaseApp{
                 //开启缓存策略
                 //.setCache()
                 //全局的请求头信息
-                .setHeaders("access-token","5103E894201342A9AF8E6239F0322769")
+                .setHeaders("access-token","")
                 //全局持久话cookie,保存本地每次都会携带在header中
                 .setCookie(false)
                 //全局ssl证书认证
