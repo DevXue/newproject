@@ -17,6 +17,10 @@ import retrofit2.http.Query;
 
 public interface API {
 
+
+    String BASEURL="https://www.baidu.com";
+
+
     //获取数据
     @GET("feature/list")
     Observable<Rtn> getData(@Query("pn") int pn, @Query("ps") int ps);

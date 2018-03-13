@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorNavigation">#2B2B2B</color>
     <color name="white">#ffffff</color>
+
+
+    <color name="tab_gb">#F3F5F4</color>
+    <color name="selector_grey">#DDDDDD</color>
 
 
     <color name="transparent">#0000</color><!-- 透明 -->

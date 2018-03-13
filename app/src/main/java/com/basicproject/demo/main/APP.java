@@ -19,7 +19,7 @@ import java.util.TreeMap;
  * 功能描述:
  */
 
-public class App extends BaseApp{
+public class APP extends BaseApp{
 
     @SuppressLint("StaticFieldLeak")
     public static Context context;
@@ -27,7 +27,6 @@ public class App extends BaseApp{
     public void onCreate() {
         super.onCreate();
         context=getApplicationContext();
-
         initRxGo();  //初始化RxGo网络请求
         initLog();   //初始化日志工具
     }
@@ -46,7 +45,7 @@ public class App extends BaseApp{
                 //开启全局配置
                 .config()
                 //全局的BaseUrl
-                .setBaseUrl(APIConst.BASEURL)
+                .setBaseUrl(API.BASEURL)
                 //开启缓存策略
                 //.setCache()
                 //全局的请求头信息

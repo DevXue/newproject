@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import com.basicproject.demo.R;
 import com.basicproject.demo.common.interfaces.ResponseLintener;
 import com.basicproject.demo.common.utils.DialogUtil;
-import com.basicproject.demo.main.App;
+import com.basicproject.demo.main.APP;
 import com.basicproject.demo.main.constants.Const;
 import com.basicproject.demo.main.home.activity.LoginActivity;
 
@@ -112,11 +112,11 @@ public abstract class BaseFragment extends Fragment implements ResponseLintener 
 
 
     protected String getUserId(){
-        return App.getInstance().getAppConfig().getString(Const.USERID,"");
+        return APP.getInstance().getAppConfig().getString(Const.USERID,"");
     }
 
     protected String getToken(){
-        return App.getInstance().getAppConfig().getString(Const.TOKEN,"");
+        return APP.getInstance().getAppConfig().getString(Const.TOKEN,"");
     }
 
     protected abstract View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState);
@@ -132,8 +132,8 @@ public abstract class BaseFragment extends Fragment implements ResponseLintener 
     }
 
     protected void setRefreshing(final boolean refreshing, final SwipeRefreshLayout refreshLayout) {
-        refreshLayout.setColorSchemeColors(ContextCompat.getColor(App.getContext(),R.color.colorAccent),
-                ContextCompat.getColor(App.getContext(), R.color.colorPrimary));
+        refreshLayout.setColorSchemeColors(ContextCompat.getColor(APP.getContext(),R.color.colorAccent),
+                ContextCompat.getColor(APP.getContext(), R.color.colorPrimary));
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

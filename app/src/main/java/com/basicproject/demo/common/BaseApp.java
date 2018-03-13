@@ -1,6 +1,6 @@
 package com.basicproject.demo.common;
 
-import android.support.multidex.MultiDexApplication;
+import android.app.Application;
 
 import com.dvp.base.config.AppConfig;
 import com.dvp.base.config.AppPreferenceConfig;
@@ -13,7 +13,7 @@ import com.dvp.base.util.AppManager;
  * 功能描述:
  */
 
-public class BaseApp extends MultiDexApplication {
+public class BaseApp extends Application {
 
 
     private static BaseApp app;

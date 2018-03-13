@@ -22,7 +22,7 @@ import com.basicproject.demo.common.interfaces.PermissionLintener;
 import com.basicproject.demo.common.interfaces.ResponseLintener;
 import com.basicproject.demo.common.utils.DialogUtil;
 import com.basicproject.demo.common.utils.ToolBarUtil;
-import com.basicproject.demo.main.App;
+import com.basicproject.demo.main.APP;
 import com.basicproject.demo.main.home.activity.SplashActivity;
 import com.yanzhenjie.sofia.Sofia;
 
@@ -81,7 +81,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Response
         }else {
             super.setContentView(layoutResID);
         }
-        setStatusBar();
+     //   setStatusBar();
     }
 
 
@@ -215,8 +215,8 @@ public abstract class BaseActivity extends AppCompatActivity implements Response
         }
     }
 
-    public App getAPP() {
-        return (App) this.getApplication();
+    public APP getAPP() {
+        return (APP) this.getApplication();
     }
 
     public void finish() {

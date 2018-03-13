@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import com.basicproject.demo.R;
 import com.basicproject.demo.common.BaseFragment;
+import com.basicproject.demo.common.utils.L;
+import com.basicproject.demo.common.utils.ToastUtil;
+import com.basicproject.demo.main.constants.Const;
 import com.basicproject.demo.main.demo.DemoActivity;
 
 import butterknife.Bind;
@@ -20,46 +23,25 @@ import butterknife.OnClick;
  *
  */
 public class HomeFragment extends BaseFragment {
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+
     @Bind(R.id.go)
     TextView go;
 
-    private String mParam1;
-    private String mParam2;
-
-
-    public HomeFragment() {
-    }
-
-    public static HomeFragment newInstance(String param1) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    String content;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         ButterKnife.bind(this, view);
+        content = getArguments().getString(Const.DATA);
+        go.setText(content);
         return view;
     }
 
     @Override
     protected void initData() {
-
+        L.e("执行"+content);
+        ToastUtil.showViewToast(content);
     }
 
     @Override

@@ -448,8 +448,8 @@ public final class L {
                 "\nDevice Model       : " + Build.MODEL +// 设备型号
                 "\nAndroid Version    : " + Build.VERSION.RELEASE +// 系统版本
                 "\nAndroid SDK        : " + Build.VERSION.SDK_INT +// SDK 版本
-                "\nApp VersionName    : " + versionName +
-                "\nApp VersionCode    : " + versionCode +
+                "\nAPP VersionName    : " + versionName +
+                "\nAPP VersionCode    : " + versionCode +
                 "\n************* Log Head ****************\n\n";
         input2File(head, filePath);
     }
