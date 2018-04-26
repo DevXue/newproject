@@ -69,7 +69,7 @@
         <activity
             android:name=".main.home.activity.GuideActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".main.demo.DemoActivity"/>
+        <activity android:name=".demo.DemoActivity"/>
     </application>
 
 </manifest>

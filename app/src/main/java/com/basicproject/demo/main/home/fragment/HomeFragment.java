@@ -13,7 +13,7 @@ import com.basicproject.demo.common.BaseFragment;
 import com.basicproject.demo.common.utils.L;
 import com.basicproject.demo.common.utils.ToastUtil;
 import com.basicproject.demo.main.constants.Const;
-import com.basicproject.demo.main.demo.DemoActivity;
+import com.basicproject.demo.demo.DemoActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

@@ -4,6 +4,7 @@ import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.basicproject.demo.common.utils.L;
 import com.basicproject.demo.main.rx.rxhttp.interceptor.AddCookiesInterceptor;
 import com.basicproject.demo.main.rx.rxhttp.interceptor.CacheInterceptor;
 import com.basicproject.demo.main.rx.rxhttp.interceptor.HeaderInterceptor;
@@ -257,7 +258,7 @@ public class SingleRxHttp {
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
                 @Override
                 public void log(String message) {
-                    Log.e("RxHttpUtils", message);
+                    L.e("RxGo", message);
                 }
             });
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);

@@ -23,6 +23,9 @@ public class APP extends BaseApp{
 
     @SuppressLint("StaticFieldLeak")
     public static Context context;
+    public static Context getContext(){return context;}
+
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -31,7 +34,7 @@ public class APP extends BaseApp{
         initLog();   //初始化日志工具
     }
 
-    public static Context getContext(){return context;}
+
 
 
     /**
@@ -70,6 +73,9 @@ public class APP extends BaseApp{
 
     }
 
+    /**
+     * 初始化Log日志
+     */
     public void initLog() {
         Utils.init(this);
         L.Config config = L.getConfig()

@@ -1,74 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1" />
 
     <com.basicproject.demo.common.view.BottomBarLayout
         android:id="@+id/bbl"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:orientation="horizontal"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/tab_gb"
+        android:gravity="center"
+        android:orientation="horizontal"
         >
 
         <com.basicproject.demo.common.view.BottomBarItem
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             app:iconNormal="@mipmap/tab_home_normal"
             app:iconSelected="@mipmap/tab_home_selected"
             app:itemText="首页"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
             app:textColorNormal="@color/colorPrimary"
             app:textColorSelected="@color/colorAccent"
-            app:itemTextSize="8sp"
-            app:itemMarginTop="-5dp"
-            app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bg"
+            app:itemPadding="@dimen/dp5"
             />
 
         <com.basicproject.demo.common.view.BottomBarItem
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             app:iconNormal="@mipmap/tab_home_normal"
             app:iconSelected="@mipmap/tab_home_selected"
             app:itemText="发现"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
             app:textColorNormal="@color/colorPrimary"
             app:textColorSelected="@color/colorAccent"
-            app:itemTextSize="8sp"
-            app:itemMarginTop="-5dp"
-            app:openTouchBg="true"
-            app:unreadThreshold="999"
             app:touchDrawable="@drawable/selector_bg"
+            app:unreadThreshold="999"
+            app:itemPadding="@dimen/dp5"
             />
 
 
         <com.basicproject.demo.common.view.BottomBarItem
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             app:iconNormal="@mipmap/tab_home_normal"
             app:iconSelected="@mipmap/tab_home_selected"
             app:itemText="我的"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
             app:textColorNormal="@color/colorPrimary"
             app:textColorSelected="@color/colorAccent"
-            app:itemTextSize="8sp"
-            app:itemMarginTop="-5dp"
-            app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bg"
+            app:itemPadding="@dimen/dp5"
             />
 
 

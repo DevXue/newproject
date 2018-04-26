@@ -1,4 +1,4 @@
-package com.basicproject.demo.main.demo;
+package com.basicproject.demo.demo;
 
 import android.util.Log;
 import android.view.View;
@@ -42,7 +42,7 @@ public class DemoActivity extends BaseActivity {
     public void onViewClicked(View v) {
         switch (v.getId()){
             case R.id.go:
-                RxGo.create(API.class).getData(1,20).compose(Transformer.<Rtn>switchSchedulers()).subscribe(new CommonObserver<Rtn>() {
+                RxGo.go(API.class).getData(1,20).compose(Transformer.<Rtn>switchSchedulers()).subscribe(new CommonObserver<Rtn>() {
                     @Override
                     protected void onError(String errorMsg) {
                         Log.e("onError","出错"+errorMsg);
@@ -52,10 +52,11 @@ public class DemoActivity extends BaseActivity {
                     protected void onSuccess(Rtn baseData) {
                         L.e("onSuccess",baseData.getData().toString());
                     }
+
                 });
                 break;
             case R.id.post:
-                RxGo.create(API.class).postRequst("张三丰","学太极").compose(Transformer.<Rtn>switchSchedulers()).subscribe(new CommonObserver<Rtn>() {
+                RxGo.go(API.class).postRequst("张三丰","学太极").compose(Transformer.<Rtn>switchSchedulers()).subscribe(new CommonObserver<Rtn>() {
                     @Override
                     protected void onError(String errorMsg) {
                         L.e("出错了",errorMsg);

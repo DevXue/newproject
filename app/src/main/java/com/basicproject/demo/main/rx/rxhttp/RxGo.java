@@ -89,7 +89,7 @@ public class RxGo {
      * @param <K> K
      * @return 返回
      */
-    public static <K> K create(Class<K> cls) {
+    public static <K> K go(Class<K> cls) {
         return GlobalRxHttp.createGApi(cls);
     }
 
