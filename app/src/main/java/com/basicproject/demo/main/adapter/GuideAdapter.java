@@ -1,4 +1,4 @@
-package com.basicproject.demo.main.home.adapter;
+package com.basicproject.demo.main.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;

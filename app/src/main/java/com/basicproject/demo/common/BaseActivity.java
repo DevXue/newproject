@@ -23,7 +23,7 @@ import com.basicproject.demo.common.interfaces.ResponseLintener;
 import com.basicproject.demo.common.utils.DialogUtil;
 import com.basicproject.demo.common.utils.ToolBarUtil;
 import com.basicproject.demo.main.APP;
-import com.basicproject.demo.main.home.activity.SplashActivity;
+import com.basicproject.demo.main.ui.homeactivity.SplashActivity;
 import com.yanzhenjie.sofia.Sofia;
 
 import java.util.ArrayList;

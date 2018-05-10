@@ -1,7 +1,6 @@
 package com.basicproject.demo.main.rx.rxhttp.http;
 
 import android.annotation.SuppressLint;
-import android.util.Log;
 
 import com.basicproject.demo.common.utils.L;
 

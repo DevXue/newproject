@@ -15,7 +15,7 @@ android {
 
         vectorDrawables.useSupportLibrary = true
 
-      //  multiDexEnabled true  用分包把注释去掉
+        //  multiDexEnabled true  用分包把注释去掉
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -28,7 +28,7 @@ android {
 
     dexOptions {
         javaMaxHeapSize "4g"
-       // jumboMode true //解决方法65535问题  还有个 65602
+        // jumboMode true //解决方法65535问题  还有个 65602
     }
 
     sourceSets {
@@ -43,6 +43,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
 }
 
 dependencies {
@@ -58,7 +60,7 @@ dependencies {
     compile 'com.yanzhenjie:album:2.0.2'
     compile 'com.yanzhenjie:durban:1.0.1'
     compile 'com.yanzhenjie:sofia:1.0.4'
-   // compile 'com.android.support:multidex:1.0.3'  用到分包就把注释去掉
+    // compile 'com.android.support:multidex:1.0.3'  用到分包就把注释去掉
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.jaeger.statusbarutil:library:1.4.0'
     compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.1'

@@ -19,7 +19,7 @@ import com.basicproject.demo.common.interfaces.ResponseLintener;
 import com.basicproject.demo.common.utils.DialogUtil;
 import com.basicproject.demo.main.APP;
 import com.basicproject.demo.main.constants.Const;
-import com.basicproject.demo.main.home.activity.LoginActivity;
+import com.basicproject.demo.main.ui.homeactivity.LoginActivity;
 
 import okhttp3.Response;
 

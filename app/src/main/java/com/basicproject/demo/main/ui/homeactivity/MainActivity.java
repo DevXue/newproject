@@ -1,16 +1,14 @@
-package com.basicproject.demo.main.home.activity;
+package com.basicproject.demo.main.ui.homeactivity;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.basicproject.demo.R;
@@ -18,7 +16,7 @@ import com.basicproject.demo.common.BaseActivity;
 import com.basicproject.demo.common.view.BottomBarItem;
 import com.basicproject.demo.common.view.BottomBarLayout;
 import com.basicproject.demo.main.constants.Const;
-import com.basicproject.demo.main.home.fragment.HomeFragment;
+import com.basicproject.demo.main.fragment.homefragment.HomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;

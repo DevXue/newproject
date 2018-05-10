@@ -48,17 +48,17 @@ public abstract class CommonObserver<T> extends BaseObserver<T> {
     }
 
     @Override
+    public void doOnNext(T t) {
+        onSuccess(t);
+    }
+
+    @Override
     public void doOnError(String errorMsg) {
         if (mProgressDialog != null) {
             mProgressDialog.dismiss();
         }
         ToastUtil.showViewToast(errorMsg);
         onError(errorMsg);
-    }
-
-    @Override
-    public void doOnNext(T t) {
-        onSuccess(t);
     }
 
     @Override

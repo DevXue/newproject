@@ -45,7 +45,7 @@ public class DemoActivity extends BaseActivity {
                 RxGo.go(API.class).getData(1,20).compose(Transformer.<Rtn>switchSchedulers()).subscribe(new CommonObserver<Rtn>() {
                     @Override
                     protected void onError(String errorMsg) {
-                        Log.e("onError","出错"+errorMsg);
+                        L.e("出错",errorMsg);
                     }
 
                     @Override

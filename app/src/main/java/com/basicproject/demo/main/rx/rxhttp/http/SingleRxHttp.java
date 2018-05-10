@@ -2,7 +2,6 @@ package com.basicproject.demo.main.rx.rxhttp.http;
 
 import android.os.Environment;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.basicproject.demo.common.utils.L;
 import com.basicproject.demo.main.rx.rxhttp.interceptor.AddCookiesInterceptor;

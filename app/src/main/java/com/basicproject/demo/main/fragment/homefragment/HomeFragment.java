@@ -1,4 +1,4 @@
-package com.basicproject.demo.main.home.fragment;
+package com.basicproject.demo.main.fragment.homefragment;
 
 
 import android.content.Intent;
@@ -12,8 +12,8 @@ import com.basicproject.demo.R;
 import com.basicproject.demo.common.BaseFragment;
 import com.basicproject.demo.common.utils.L;
 import com.basicproject.demo.common.utils.ToastUtil;
-import com.basicproject.demo.main.constants.Const;
 import com.basicproject.demo.demo.DemoActivity;
+import com.basicproject.demo.main.constants.Const;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -41,7 +41,6 @@ public class HomeFragment extends BaseFragment {
     @Override
     protected void initData() {
         L.e("执行"+content);
-        ToastUtil.showViewToast(content);
     }
 
     @Override
@@ -53,6 +52,6 @@ public class HomeFragment extends BaseFragment {
 
     @OnClick(R.id.go)
     public void onViewClicked() {
-        startActivity(new Intent(getActivity(),DemoActivity.class));
+        startActivity(new Intent(getActivity(), DemoActivity.class));
     }
 }

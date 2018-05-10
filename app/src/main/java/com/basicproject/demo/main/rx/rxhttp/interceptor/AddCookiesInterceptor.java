@@ -1,7 +1,5 @@
 package com.basicproject.demo.main.rx.rxhttp.interceptor;
 
-import android.util.Log;
-
 
 import com.basicproject.demo.common.utils.L;
 import com.basicproject.demo.main.rx.rxhttp.constant.SPKeys;

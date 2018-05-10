@@ -1,4 +1,4 @@
-package com.basicproject.demo.main.home.activity;
+package com.basicproject.demo.main.ui.homeactivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

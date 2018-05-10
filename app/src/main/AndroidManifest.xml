@@ -51,11 +51,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main.home.activity.MainActivity"
+            android:name=".main.ui.homeactivity.MainActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".main.home.activity.SplashActivity"
+            android:name=".main.ui.homeactivity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,12 +64,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".main.home.activity.LoginActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".main.home.activity.GuideActivity"
+            android:name=".main.ui.homeactivity.LoginActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".demo.DemoActivity"/>
+        <activity
+            android:name=".main.ui.homeactivity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".demo.DemoActivity" />
     </application>
 
 </manifest>

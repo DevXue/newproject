@@ -1,4 +1,4 @@
-package com.basicproject.demo.main.home.activity;
+package com.basicproject.demo.main.ui.homeactivity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -16,7 +16,7 @@ import com.basicproject.demo.common.BaseActivity;
 import com.basicproject.demo.common.interfaces.PermissionLintener;
 import com.basicproject.demo.common.utils.ToastUtil;
 import com.basicproject.demo.main.constants.Const;
-import com.basicproject.demo.main.home.adapter.GuideAdapter;
+import com.basicproject.demo.main.adapter.GuideAdapter;
 import com.jaeger.library.StatusBarUtil;
 
 import java.util.ArrayList;
